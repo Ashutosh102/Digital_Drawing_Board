@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Digital Drawing Board</title>
+        <link href="normalize.css" type="text/css" rel="stylesheet">
+        <link href="style.css" type="text/css" rel="stylesheet">
+        <link href='http://fonts.googleapis.com/css?family=Sigmar+One' rel='stylesheet' type='text/css'>
+    </head>
+    <body>
+        <header>
+            <h1>Digital Drawing Board</h1>
+        </header>
+        
+        <div class="panel">
+            <div id="colorSelect">
+                <label for='color'>Color:</label>
+                <input class="color" id="color"></input>
+            </div>
+
+            <div id="sizeSelect">
+                <label for='thick-menu'>Thickness:</label>
+                <select class="thick-choice" id="thick-menu">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                </select>
+            </div>
+
+            <div id="buttons">
+                <button class="eraser">Eraser</button>
+                <button class="clear">Clear</button>
+            </div>
+        </div>
+
+        <noscript>
+            <div class="no-script">
+                <p>Note: Please enable Javascript</p>
+            </div>
+        </noscript>
+
+        <canvas class="canvas-main" width="1280" height="720"></canvas>
+        <script src="jscolor/jscolor.js"></script>
+        <script src="script.js"></script>
+    </body>
+</html
